@@ -13,13 +13,6 @@ int my_strncasecmp(const char *s1, const char *s2, int len);
  * @src: Where to copy the string from
  */
 char *strcpy(char *dest, const char *src)
-{
-	unsigned int i;
-	for( i=0; src[i] != '\0' ; i++){
-		dest[i] = src[i];
-		return dest;
-	}
-}
 
 /**
  * my_strncpy - Copy a length-limited, C-string
@@ -42,19 +35,6 @@ char *my_strncpy(char *dest, const char *src, int count);
  * @src: The string to append to it
  */
 char *strcat(char *dest, const char *src)
-{
-  unsigned int j,k;
- 	for(j=0; dest[j] != '\0' ; j++)
- 	{
- 		for(k=0 ; src[k] != '\0' ; k++)
- 			{
- 				dest[j+k] = src[k] ;
- 				dest[j+ k] = '\0' ;
-
- 			}
- 			return dest;
- 	}
-}
 
 /**
  * my_strncat - Append a length-limited, C-string to another
